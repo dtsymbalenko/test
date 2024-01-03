@@ -1,0 +1,178 @@
+@font-face {
+    font-family: "e-ukraine";
+    src: url("./fonts/e-Ukraine-Regular.ttf");
+    src: url("./fonts/e-Ukraine-Regular.woff2") format("woff2");
+    src: url("./fonts/e-Ukraine-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "e-ukraine";
+    src: url("./fonts/e-Ukraine-Thin.ttf");
+    src: url("./fonts/e-Ukraine-Thin.woff2") format("woff2");
+    src: url("./fonts/e-Ukraine-Thin.woff") format("woff");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "e-ukraine";
+    src: url("./fonts/e-Ukraine-Medium.ttf");
+    src: url("./fonts/e-Ukraine-Medium.woff2") format("woff2");
+    src: url("./fonts/e-Ukraine-Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "e-ukraine";
+    src: url("./fonts/e-Ukraine-Light.ttf");
+    src: url("./fonts/e-Ukraine-Light.woff2") format("woff2");
+    src: url("./fonts/e-Ukraine-Light.woff") format("woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "e-ukraine";
+    src: url("./fonts/e-Ukraine-Bold.ttf");
+    src: url("./fonts/e-Ukraine-Bold.woff2") format("woff2");
+    src: url("./fonts/e-Ukraine-Bold.woff") format("woff");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "e-ukraine";
+    src: url("./fonts/e-Ukraine-UltraLight.ttf");
+    src: url("./fonts/e-Ukraine-UltraLight.woff2") format("woff2");
+    src: url("./fonts/e-Ukraine-UltraLight.woff") format("woff");
+    font-weight: 200;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: "e-ukraine", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container__top {
+    flex: 1;
+    position: relative;
+}
+
+.gradient-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.gradient {
+    filter: blur(5px);
+    left: -50px;
+    top: -50px;
+    bottom: -50px;
+    right: -50px;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-image: linear-gradient(217deg, rgba(255,0,0,0.8), rgba(255,0,0,0) 50.71%),linear-gradient(127deg, rgba(0,255,0,0.8), rgba(0,255,0,0) 70.71%),linear-gradient(336deg, rgba(0,0,255,0.8), rgba(0,0,255,0) 70.71%);
+    background-size: 350vw 350vh;
+    -webkit-animation: 15s linear 0s infinite alternate none running granimate;
+    animation: 15s linear 0s infinite alternate none running granimate;
+}
+
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 15px 30px 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation__icon-container {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation__icon {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.navigation__icon--lenta {
+    width: 35px;
+    height: 31px;
+    background-image: url("./images/lenta.jpg");
+}
+
+.navigation__icon--documents {
+    width: 29px;
+    height: 33px;
+    background-image: url("./images/documents.jpg");
+}
+
+.navigation__icon--documents-is-active {
+    background-position-y: -32px;
+}
+
+.navigation__icon--services {
+    width: 33px;
+    height: 32px;
+    background-image: url("./images/services.jpg");
+}
+
+.navigation__icon--menu {
+    width: 36px;
+    height: 36px;
+    background-image: url("./images/menu.jpg");
+}
+
+@keyframes granimate {
+    0%, 100% {
+        background-position: 0 25%;
+    }
+
+    25%, 75% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+}
