@@ -2,7 +2,7 @@
     "name": "Дія",
     "short_name": "Дія",
     "description": "Дія",
-    "start_url": "/",
+    "start_url": "/test",
     "icons": [
         {
             "src": "./favicon.png",
