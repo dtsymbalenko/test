@@ -130,37 +130,23 @@ html, body {
 }
 
 .navigation__icon {
-    background-position: 0 0;
-    background-repeat: no-repeat;
     display: flex;
 }
 
 .navigation__icon--lenta {
     width: 35px;
-    height: 31px;
-    background-image: url("./images/lenta.jpg");
 }
 
 .navigation__icon--documents {
     width: 29px;
-    height: 33px;
-    background-image: url("./images/documents.jpg");
-}
-
-.navigation__icon--documents-is-active {
-    background-position-y: -32px;
 }
 
 .navigation__icon--services {
     width: 33px;
-    height: 32px;
-    background-image: url("./images/services.jpg");
 }
 
 .navigation__icon--menu {
     width: 36px;
-    height: 36px;
-    background-image: url("./images/menu.jpg");
 }
 
 @keyframes granimate {
