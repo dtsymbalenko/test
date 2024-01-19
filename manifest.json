@@ -1,0 +1,17 @@
+{
+    "name": "Дія",
+    "short_name": "Дія",
+    "description": "Дія",
+    "start_url": "/test",
+    "icons": [
+        {
+            "src": "./favicon.png",
+            "sizes": "355x355",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#3b332e",
+    "background_color": "#ffffff",
+    "orientation": "portrait",
+    "display": "standalone"
+}
